@@ -34,3 +34,79 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*обнуление стандартных отступов во всем документе*/ 
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+.wraper{
+	width: 320px;
+	margin: 0 auto;
+	background: url("img/fon-mob.jpg") 0 0/100% auto no-repeat;
+}
+
+.header{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 22px 20px;	
+}
+.logo{
+	font-size: 23px;
+}
+
+.header__conteiner{
+display: flex;
+justify-content: space-between;
+}
+.header__conteiner .header__logo a{
+	color: #fff;
+}
+
+.header__menu{
+	display: none;
+}
+
+.intro{
+	display: flex;
+	flex-direction: column;
+}
+
+.intro__slogan{
+	margin: 29px 20px 21px 20px;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 28.8px;
+	text-align: center;
+	color: #fff;
+}
+
+.intro__img img{
+	width: 320px;
+	
+}
+
+.intro__download{
+	background-color: rgba(29, 38, 49, 1);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	
+}
+
+.download__link a{
+	color: #fff;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px;
+	border: #fff 3px solid;
+	border-radius: 30px;
+	
+}
+.intro__icon{
+	display: flex;
+	
+	
+
+}
