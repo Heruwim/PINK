@@ -1,19 +1,37 @@
 /*обнуление стандартных отступов во всем документе*/
-*{
+* {
 	padding: 0;
 	margin: 0;
 	border: 0;
 }
-*,*::before,*::after{
+
+*,
+*::before,
+*::after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
-:focus,:active{outline: none;}
-a:focus,:active{outline: none;}
 
-nav,footer,header,aside{display: block;}
-html,body{
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
 	height: 100%;
 	width: 100%;
 	font-size: 100%;
@@ -23,55 +41,94 @@ html,body{
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
 }
-input,button,textarea{font-family: inherit;}
 
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner {padding: 0; border: 0;}
-a, a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
-/*обнуление стандартных отступов во всем документе*/ 
-
-body{
-	font-family: 'Open Sans', sans-serif;
-	
+input,
+button,
+textarea {
+	font-family: inherit;
 }
 
-.wraper{
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+/*обнуление стандартных отступов во всем документе*/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.wraper {
 	width: 320px;
 	margin: 0 auto;
 	background: url("img/fon-mob.jpg") 0 0/100% auto no-repeat;
 }
 
-.header{
+.header {
 	background-color: rgba(0, 0, 0, 0.5);
-	padding: 22px 20px;	
+	padding: 22px 20px;
 }
-.logo{
+
+.logo {
 	font-size: 23px;
 }
 
-.header__conteiner{
-display: flex;
-justify-content: space-between;
+.header__conteiner {
+	display: flex;
+	justify-content: space-between;
 }
-.header__conteiner .header__logo a{
+
+.header__conteiner .header__logo a {
 	color: #fff;
 }
 
-.header__menu{
+.header__menu {
 	display: none;
 }
 
-.intro{
+.intro {
 	display: flex;
 	flex-direction: column;
 }
 
-.intro__slogan{
+.intro__slogan {
 	margin: 29px 20px 21px 20px;
 	font-weight: 300;
 	font-size: 24px;
@@ -80,33 +137,35 @@ justify-content: space-between;
 	color: #fff;
 }
 
-.intro__img img{
+.intro__img .intro__images {
 	width: 320px;
-	
+	background: url("img/screenMob.png") 104px 30px/115px no-repeat;
+
 }
 
-.intro__download{
+
+.intro__download {
 	background-color: rgba(29, 38, 49, 1);
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
-	
+
+
 }
 
-.download__link a{
+.download__link a {
 	color: #fff;
 	font-size: 16px;
 	font-weight: bold;
 	padding: 10px;
 	border: #fff 3px solid;
 	border-radius: 30px;
-	
+
 }
-.intro__icon{
-	display: flex;
-	
-	
+
+.intro__download .intro__icon {
+	padding: 20px;
+
 
 }
