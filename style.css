@@ -90,24 +90,27 @@ h6 {
 
 /*обнуление стандартных отступов во всем документе*/
 
-body {
+html, body {
 	font-family: 'Open Sans', sans-serif;
-
+	background-color: #E5E5E5;
+	font-size: 14px;
 }
 
 .wraper {
-	width: 320px;
 	margin: 0 auto;
-	background: url("img/fon-mob.jpg") 0 0/100% auto no-repeat;
+	height: 100%;
 }
 
 .header {
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.3);
 	padding: 22px 20px;
+	position: fixed;
+	width: 100%;
 }
 
 .logo {
 	font-size: 23px;
+	text-transform: uppercase;
 }
 
 .header__conteiner {
@@ -126,10 +129,14 @@ body {
 .intro {
 	display: flex;
 	flex-direction: column;
+	
+}
+.intro__contain{
+	background: url("img/background-small@2x.jpg") 50% 50%/auto 100% no-repeat;
 }
 
 .intro__slogan {
-	margin: 29px 20px 21px 20px;
+	margin: 95px 20px 21px 20px;
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 28.8px;
@@ -137,35 +144,37 @@ body {
 	color: #fff;
 }
 
-.intro__img .intro__images {
-	width: 320px;
-	background: url("img/screenMob.png") 104px 30px/115px no-repeat;
 
+.intro__img .intro__images {
+	min-width: 80%;
+   background: url(img/screenMob.png) 50% 36%/35%no-repeat;
+	display: block;
+   margin: 0 auto;
 }
 
 
 .intro__download {
 	background-color: rgba(29, 38, 49, 1);
-	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
-
+	justify-content: space-around;
+	padding: 10px;
+	height: 100%;
+	width: 100%;
+	
 }
 
 .download__link a {
 	color: #fff;
 	font-size: 16px;
 	font-weight: bold;
-	padding: 10px;
+	padding: 10px 30px;
 	border: #fff 3px solid;
 	border-radius: 30px;
 
 }
 
 .intro__download .intro__icon {
-	padding: 20px;
-
-
+	
 }
