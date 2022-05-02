@@ -90,11 +90,20 @@ h6 {
 
 /*обнуление стандартных отступов во всем документе*/
 
-html, body {
+html,
+body {
 	font-family: 'Open Sans', sans-serif;
-	background-color: #E5E5E5;
+	/*background-color: #E5E5E5;*/
 	font-size: 14px;
 }
+
+h2{
+	color: rgba(40, 54, 69, 1);
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 28.8px;
+	text-align: center;
+	}
 
 .wraper {
 	margin: 0 auto;
@@ -129,9 +138,10 @@ html, body {
 .intro {
 	display: flex;
 	flex-direction: column;
-	
+
 }
-.intro__contain{
+
+.intro__contain {
 	background: url("img/background-small@2x.jpg") 50% 50%/auto 100% no-repeat;
 }
 
@@ -147,9 +157,9 @@ html, body {
 
 .intro__img .intro__images {
 	min-width: 80%;
-   background: url(img/screenMob.png) 50% 36%/35%no-repeat;
+	background: url(img/screenMob.png) 50% 36%/35% no-repeat;
 	display: block;
-   margin: 0 auto;
+	margin: 0 auto;
 }
 
 
@@ -159,22 +169,78 @@ html, body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-	padding: 10px;
-	height: 100%;
-	width: 100%;
-	
+
 }
 
 .download__link a {
+	display: inline-block;
 	color: #fff;
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: bold;
-	padding: 10px 30px;
+	padding: 16px 35px;
 	border: #fff 3px solid;
 	border-radius: 30px;
+	margin: 28px 20px 20px 20px;
 
 }
 
-.intro__download .intro__icon {
-	
+.intro__icon {
+	padding: 0%;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	justify-content: center;
+}
+
+.icon img {
+	display: block;
+	margin: 17px;
+}
+
+.intro__text {
+	font-size: 14px;
+	text-align: center;
+	color: white;
+	font-weight: 300;
+	line-height: 24px;
+	margin: 13px 20px 38px 20px;
+}
+
+.promo__heading{
+margin: 46px 20px 70px 20px;	
+background-color: #fff;
+}
+
+.promo__heading h2:first-child{
+padding-bottom: 30px;
+}
+
+.promo-content{
+background-color:rgba(242, 242, 242, 1);
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.info__content{
+	display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+	 text-align: center;
+}
+
+.text__caption{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.text__info{
+	line-height: 24px;
+	color: rgba(40, 54, 69, 1);
+}
+
+.info__content__img{
+	display: block;
 }
