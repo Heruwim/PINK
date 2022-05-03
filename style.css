@@ -234,13 +234,22 @@ justify-content: center;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
+	margin: 43px 20px 14px 20px;
 }
 
 .text__info{
 	line-height: 24px;
 	color: rgba(40, 54, 69, 1);
+	margin: 0 20px 48px 20px;
+}
+.iphone1,.iphone2{
+	display: none;
 }
 
 .info__content__img{
-	display: block;
+background: url(img/iphone1.png) 0 0/cover no-repeat;
+}
+.info__content__img .screen{
+	width: 90%;
+	margin-top: 41px;
 }
