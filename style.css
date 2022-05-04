@@ -97,13 +97,13 @@ body {
 	font-size: 14px;
 }
 
-h2{
+h2 {
 	color: rgba(40, 54, 69, 1);
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 28.8px;
 	text-align: center;
-	}
+}
 
 .wraper {
 	margin: 0 auto;
@@ -206,50 +206,114 @@ h2{
 	margin: 13px 20px 38px 20px;
 }
 
-.promo__heading{
-margin: 46px 20px 70px 20px;	
-background-color: #fff;
+.promo__heading {
+	margin: 46px 20px 70px 20px;
+	background-color: #fff;
 }
 
-.promo__heading h2:first-child{
-padding-bottom: 30px;
+.promo__heading h2:first-child {
+	padding-bottom: 30px;
 }
 
-.promo-content{
-background-color:rgba(242, 242, 242, 1);
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
-
-.info__content{
+.promo-content {
+	background-color: rgba(242, 242, 242, 1);
 	display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-	 text-align: center;
+	flex-direction: column;
+	justify-content: center;
 }
 
-.text__caption{
+.info__content {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.text__caption {
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 	margin: 43px 20px 14px 20px;
 }
 
-.text__info{
+/*убирает верхний отступ у 2 и 3 телефона*/
+.info__content__text .caption {
+	margin-top: 0;
+}
+
+.text__info {
 	line-height: 24px;
 	color: rgba(40, 54, 69, 1);
 	margin: 0 20px 48px 20px;
 }
-.iphone1,.iphone2{
+
+.iphone1,
+.iphone2 {
 	display: none;
 }
 
-.info__content__img{
-background: url(img/iphone1.png) 0 0/cover no-repeat;
+.info__content__img {
+	background: url(img/iphone1.png) 0 0/cover no-repeat;
 }
-.info__content__img .screen{
+
+.info__content__img .screen {
 	width: 90%;
 	margin-top: 41px;
+}
+
+.comments__content{
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+}
+
+.text__comment{
+	color:rgba(40, 54, 69, 1);
+	line-height: 30px;
+	text-align: center;
+	margin: 0 20px 110px 20px;
+
+}
+
+.author__comment h3{
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.author__description{
+	display: none;
+}
+
+.offer__table{
+	background-color: #F2F2F2;
+}
+
+.propose{
+width: 100%;
+}
+.propose__rate{
+	background-color: rgba(40, 54, 69, 1);
+	border: rgba(40, 54, 69, 1) 2px solid;
+	padding: 19px;
+}
+.propose__rate h3{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 1);
+	line-height: 30px;
+}
+
+.price{
+	color: rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+	display: block;
 }
