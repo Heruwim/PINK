@@ -92,9 +92,10 @@ h6 {
 
 html,
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	/*background-color: #E5E5E5;*/
 	font-size: 14px;
+	/* line-height: 18px; */
 }
 
 h2 {
@@ -103,6 +104,13 @@ h2 {
 	font-weight: 300;
 	line-height: 28.8px;
 	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+	color: rgba(40, 54, 69, 1);
 }
 
 .wraper {
@@ -138,11 +146,10 @@ h2 {
 .intro {
 	display: flex;
 	flex-direction: column;
-
 }
 
 .intro__contain {
-	background: url("img/background-small@2x.jpg") 50% 50%/auto 100% no-repeat;
+	background: url("img/background-small@2x.jpg") 50% 50% / auto 100% no-repeat;
 }
 
 .intro__slogan {
@@ -154,7 +161,6 @@ h2 {
 	color: #fff;
 }
 
-
 .intro__img .intro__images {
 	min-width: 80%;
 	background: url(img/screenMob.png) 50% 36%/35% no-repeat;
@@ -162,14 +168,12 @@ h2 {
 	margin: 0 auto;
 }
 
-
 .intro__download {
 	background-color: rgba(29, 38, 49, 1);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
-
 }
 
 .download__link a {
@@ -181,7 +185,6 @@ h2 {
 	border: #fff 3px solid;
 	border-radius: 30px;
 	margin: 28px 20px 20px 20px;
-
 }
 
 .intro__icon {
@@ -248,13 +251,14 @@ h2 {
 	margin: 0 20px 48px 20px;
 }
 
+/*убирает 1 и 2 телефон*/
 .iphone1,
 .iphone2 {
 	display: none;
 }
 
 .info__content__img {
-	background: url(img/iphone1.png) 0 0/cover no-repeat;
+	background: url(img/iphone1.png) 0 0 / cover no-repeat;
 }
 
 .info__content__img .screen {
@@ -262,21 +266,20 @@ h2 {
 	margin-top: 41px;
 }
 
-.comments__content{
+.comments__content {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
 }
 
-.text__comment{
-	color:rgba(40, 54, 69, 1);
+.text__comment {
+	color: rgba(40, 54, 69, 1);
 	line-height: 30px;
 	text-align: center;
 	margin: 0 20px 110px 20px;
-
 }
 
-.author__comment h3{
+.author__comment h3 {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
@@ -284,23 +287,28 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.author__description{
+.author__description {
 	display: none;
 }
 
-.offer__table{
-	background-color: #F2F2F2;
+/* таблица */
+.offer__table {
+	background-color: #f2f2f2;
 }
 
-.propose{
-width: 100%;
+.propose {
+	width: 100%;
 }
-.propose__rate{
+
+.propose__rate {
+	background: url(img/icon/hit\ ribbon.svg) no-repeat;
 	background-color: rgba(40, 54, 69, 1);
 	border: rgba(40, 54, 69, 1) 2px solid;
 	padding: 19px;
+	position: relative;
 }
-.propose__rate h3{
+
+.propose__rate h3 {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 16px;
@@ -309,11 +317,111 @@ width: 100%;
 	line-height: 30px;
 }
 
-.price{
+.price {
 	color: rgba(255, 255, 255, 1);
 	text-transform: uppercase;
 	font-size: 18px;
 	font-weight: 300;
 	text-align: center;
 	display: block;
+}
+
+.hit {
+	position: absolute;
+	top: 24px;
+	left: 12px;
+	color: #fff;
+	transform: rotate(-0.12turn);
+	text-transform: uppercase;
+}
+
+.propose__yes {
+	border: #e5e5e5 1px solid;
+	text-transform: uppercase;
+	background-color: #fff;
+	background: url(img/icon/yes.svg) 90% 50% no-repeat;
+	padding: 24px 20px;
+}
+
+.propose__no {
+	border: #e5e5e5 1px solid;
+	text-transform: uppercase;
+	background-color: #fff;
+	background: url(img/icon/no.svg) 90% 50% no-repeat;
+	padding: 24px 20px;
+}
+
+/* Блок с конетактами */
+
+.contacts__container {
+	background-color: #fff;
+	padding: 50px 20px 0px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.cotacts__phone {
+	margin-top: 45px;
+}
+
+.cotacts__email {
+	margin-top: 31px;
+}
+
+.cotacts__location {
+	margin-top: 35px;
+}
+
+.contacts__address {
+	margin-top: 13px;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 32.68px;
+	color: rgba(210, 40, 86, 1);
+}
+
+.cotacts__location-map {
+	margin-top: 41px;
+}
+
+/* Футер */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 40px 0;
+}
+
+.footer__logo {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.footer__logo img {
+	margin-right: 12px;
+}
+
+.footer__icon {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.icon {
+	padding: 10px;
+	background: url(img/icon/circle.svg) 50% no-repeat;
+}
+
+.footer__copyright {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.footer__copyright span {
+	margin-right: 15px;
 }
