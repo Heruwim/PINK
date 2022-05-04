@@ -17,19 +17,21 @@
     <div class="wraper">
       <header class="header">
         <div class="header__conteiner">
-          <div class="logo header__logo"><a href="#">PINK</a></div>
-          <div class="header__burger">
-            <span>
-              <img src="img/icon/menu.svg" alt="бургер меню" />
-            </span>
+          <input type="checkbox" id="check-menu">
+			 <label for="check-menu" class="header__label">PINK</label>			
+          <div class="header__burger first">
           </div>
+			 <div class="header__burger second">
+			</div>
+			<div class="header__burger third">
+			</div>
+			<div class="header__burger fourth">
+			</div>
           <nav class="header__menu">
-            <ul class="header__list">
-              <li><a href="#" class="header__link">Главная</a></li>
-              <li><a href="#" class="header__link">Фотографии</a></li>
-              <li><a href="#" class="header__link">Конкурс</a></li>
-              <li><a href="#" class="header__link">HTML Academy</a></li>
-            </ul>
+              <a href="#" class="header__link">Главная</a>
+              <a href="#" class="header__link">Фотографии</a>
+              <a href="#" class="header__link">Конкурс</a>
+              <a href="#" class="header__link">HTML Academy</a>
           </nav>
         </div>
       </header>
@@ -146,31 +148,41 @@
               </table>
             </div>
           </section>
-			 <section class="contacts">
-				 <div class="contacts__container">
-					<h2>Остались вопросы?</h2>
-					<h2>Свяжитесь с нами!</h2>
-					<div class="cotacts__phone">
-						<h3>Звоните:</h3>
-						<p class="contacts__address">+7 (812) 555-66-66</p>
-					</div>
-					<div class="cotacts__email">
-						<h3>Пишите:</h3>
-						<p class="contacts__address">mail@htmlacademy.ru</p>
-					</div>
-					<div class="cotacts__location">
-						<h3>Приезжайте в гости:</h3>
-						<p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
-					</div>
-					<div class="cotacts__location-map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3025198760419!2d30.3222962!3d59.9386957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1651673572306!5m2!1sru!2sua" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-				 </div>
-			 </section>
+          <section class="contacts">
+            <div class="contacts__container">
+              <h2>Остались вопросы?</h2>
+              <h2>Свяжитесь с нами!</h2>
+              <div class="cotacts__phone">
+                <h3>Звоните:</h3>
+                <p class="contacts__address">+7 (812) 555-66-66</p>
+              </div>
+              <div class="cotacts__email">
+                <h3>Пишите:</h3>
+                <p class="contacts__address">mail@htmlacademy.ru</p>
+              </div>
+              <div class="cotacts__location">
+                <h3>Приезжайте в гости:</h3>
+                <p class="contacts__address">ул. Большая Конюшенная, 19/8</p>
+              </div>
+              <div class="cotacts__location-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3025198760419!2d30.3222962!3d59.9386957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1651673572306!5m2!1sru!2sua"
+                  width="320"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </section>
         </div>
       </main>
       <footer class="footer">
-        <div class="footer__logo logo"><img src="img/icon/glasses.svg" alt=""> pink</div>
+        <div class="footer__logo logo">
+          <img src="img/icon/glasses.svg" alt="" /> pink
+        </div>
         <div class="footer__icon">
           <div class="icon__twiter icon">
             <a href="http://"><img src="img/icon/twiter.svg" alt="twiter" /></a>
@@ -184,7 +196,9 @@
             <a href="http://"><img src="img/icon/youtube.svg" alt="" /></a>
           </div>
         </div>
-        <div class="footer__copyright"><span>Разработано</span><img src="img/icon/htmlAcademy.svg" alt=""></div>
+        <div class="footer__copyright">
+          <span>Разработано</span><img src="img/icon/htmlAcademy.svg" alt="" />
+        </div>
       </footer>
     </div>
   </body>
